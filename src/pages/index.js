@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' flex items-center text-dark w-full min-h-screen'> 
+      <main className=' flex items-center text-dark w-full min-h-screen dark:text-light'> 
       <Layout className='pt-0'>
 
         <div className='flex items-center justify-between w-full'> 
@@ -35,10 +35,11 @@ export default function Home() {
             </p>
             <div className='flex item-center self-start mt-2'>
               <Link href='/ra_resume.docx' target='_blank' 
-              className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark' download={true}>
-              Resume <LinkArrow className={'w-6 ml-1'}></LinkArrow></Link>
+              className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light
+               hover:text-dark hover border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light ' download={true}>
+              Resume <LinkArrow className={'w-6 ml-1 '}></LinkArrow></Link>
               <Link href='mailto:raj.a@msn.com' target='_blank'
-              className='ml-4 text-lg font-medium capitalize text-dark underline'
+              className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
               >Contact</Link>
             </div>
           </div>
