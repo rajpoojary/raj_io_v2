@@ -11,6 +11,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import {motion,useMotionValue} from 'framer-motion'
+import { getAllArticles } from '../lib/articles';
+import ArticleList from '../components/ArticleList';
 
 const MovingImg=({title,img,link}) => {
     const x=useMotionValue(0)
@@ -80,58 +82,43 @@ const FeaturedArticle = ({img,title,time,summary,link}) => {
 }
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('src/content/blog'));
-  const posts = files.map((filename) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join('src/content/blog', filename),
-      'utf-8'
-    );
-    const { data: frontMatter } = matter(markdownWithMeta);
-    return {
-      frontMatter,
-      slug: filename.replace('.md', ''),
-    };
-  });
-
-  // Add your external blog posts
-  const externalPosts = [
+  const articles = [
     {
-      frontMatter: {
-        title: "Conquering System Design: A Roadmap for Beginners",
-        summary: "A comprehensive guide to system design fundamentals, from scalability to advanced concepts, with curated resources for deeper learning",
-        image: article1,
-        date: "2024-02-23"
-      },
-      slug: "system-design-beginners",
-      isExternal: false,
-      externalLink: "/blog/system-design-beginners"
+      title: 'Conquering System Design: A Roadmap for Beginners',
+      date: '2024-03-20',
+      summary: 'A comprehensive guide to understanding and mastering system design fundamentals.',
+      image: '/images/articles/Article1.jpeg',
+      author: 'Raj',
+      slug: 'system-design-beginners'
     },
     {
-      frontMatter: {
-        title: "List Of books I read and plan to read",
-        summary: "List of books around productivity, growth, and leadership",
-        image: article2,
-        date: "2024-03-26"
-      },
-      slug: "complete-book-list",
-      isExternal: false,
-      externalLink: "/blog/complete-book-list"
+      title: 'List Of books I read and plan to read',
+      date: '2023-06-27',
+      summary: 'List of books around productivity + growth + leadership',
+      image: '/images/articles/Article2.jpeg',
+      author: 'Raj',
+      slug: 'complete-book-list'
+    },
+    {
+      title: 'CrowdStrike Outage: A Deep Dive into the Incident',
+      date: '2024-03-19',
+      summary: 'Analyzing the recent CrowdStrike outage and its implications for enterprise security.',
+      image: '/images/articles/Article3.jpeg',
+      author: 'Raj',
+      slug: 'crowdstrike-outage'
     }
   ];
 
-  // Combine internal and external posts
-  const allPosts = [...externalPosts, ...posts];
-
   return {
     props: {
-      posts: allPosts,
+      articles,
     },
   };
 }
 
-const articles = ({ posts }) => {
-  const featuredPosts = posts.slice(0, 2);
-  const otherPosts = posts.slice(2);
+const articles = ({ articles }) => {
+  const featuredPosts = articles.slice(0, 2);
+  const otherPosts = articles.slice(2);
 
   return (
     <>
@@ -146,11 +133,11 @@ const articles = ({ posts }) => {
             {featuredPosts.map((post) => (
               <FeaturedArticle 
                 key={post.slug}
-                title={post.frontMatter.title}
-                summary={post.frontMatter.summary}
+                title={post.title}
+                summary={post.summary}
                 time='10 min'
-                link={post.isExternal ? post.externalLink : `/blog/${post.slug}`}
-                img={post.frontMatter.image}
+                link={post.slug}
+                img={post.image}
               />
             ))}
         </ul>
@@ -159,10 +146,10 @@ const articles = ({ posts }) => {
           {otherPosts.map((post) => (
             <Article 
               key={post.slug}
-              title={post.frontMatter.title}
-              img={post.frontMatter.image}
-              date={post.frontMatter.date}
-              link={post.isExternal ? post.externalLink : `/blog/${post.slug}`}
+              title={post.title}
+              img={post.image}
+              date={post.date}
+              link={post.slug}
             />
           ))}
         </ul>
