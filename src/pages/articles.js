@@ -98,7 +98,7 @@ export async function getStaticProps() {
     {
       frontMatter: {
         title: "Conquering System Design: A Roadmap for Beginners",
-        summary: "This blog post will serve as your guide providing you with a curated list of 25 essential articles to jumpstart your learning journey",
+        summary: "A comprehensive guide to system design fundamentals, from scalability to advanced concepts, with curated resources for deeper learning",
         image: article1,
         date: "2024-02-23"
       },
@@ -108,8 +108,8 @@ export async function getStaticProps() {
     },
     {
       frontMatter: {
-        title: "List Of books I read and plan to read or read",
-        summary: "List of books around productivity + growth + leadership",
+        title: "List Of books I read and plan to read",
+        summary: "List of books around productivity, growth, and leadership",
         image: article2,
         date: "2024-03-26"
       },
