@@ -9,6 +9,16 @@ import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 
 const BlogPost = ({ frontMatter, mdxSource }) => {
+  if (!frontMatter || !mdxSource) {
+    return (
+      <Layout>
+        <div className="flex items-center justify-center min-h-screen">
+          <h1 className="text-2xl">Blog post not found</h1>
+        </div>
+      </Layout>
+    );
+  }
+
   return (
     <>
       <Head>
@@ -17,7 +27,7 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
-          <article className="w-full prose prose-lg dark:prose-invert">
+          <article className="w-full prose prose-lg dark:prose-invert max-w-4xl mx-auto">
             <div className="mb-8">
               <Image
                 src={frontMatter.image}
@@ -34,7 +44,7 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
               <span>•</span>
               <span>{frontMatter.author}</span>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 prose-headings:text-dark prose-headings:dark:text-light prose-p:text-dark prose-p:dark:text-light">
               <MDXRemote {...mdxSource} />
             </div>
           </article>
@@ -45,34 +55,51 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
 };
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join('src/content/blog'));
-  const paths = files.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }));
+  try {
+    const blogDir = path.join(process.cwd(), 'src/content/blog');
+    const files = fs.readdirSync(blogDir);
+    const paths = files.map((filename) => ({
+      params: {
+        slug: filename.replace('.md', ''),
+      },
+    }));
 
-  return {
-    paths,
-    fallback: false,
-  };
+    return {
+      paths,
+      fallback: false,
+    };
+  } catch (error) {
+    console.error('Error in getStaticPaths:', error);
+    return {
+      paths: [],
+      fallback: false,
+    };
+  }
 };
 
 export const getStaticProps = async ({ params }) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join('src/content/blog', params.slug + '.md'),
-    'utf-8'
-  );
+  try {
+    const filePath = path.join(process.cwd(), 'src/content/blog', params.slug + '.md');
+    const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
+    const { data: frontMatter, content } = matter(markdownWithMeta);
+    const mdxSource = await serialize(content, {
+      mdxOptions: {
+        development: process.env.NODE_ENV === 'development',
+      },
+    });
 
-  const { data: frontMatter, content } = matter(markdownWithMeta);
-  const mdxSource = await serialize(content);
-
-  return {
-    props: {
-      frontMatter,
-      mdxSource,
-    },
-  };
+    return {
+      props: {
+        frontMatter,
+        mdxSource,
+      },
+    };
+  } catch (error) {
+    console.error('Error in getStaticProps:', error);
+    return {
+      notFound: true,
+    };
+  }
 };
 
 export default BlogPost; 

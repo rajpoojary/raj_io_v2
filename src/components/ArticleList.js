@@ -44,38 +44,43 @@ const FramerImage = motion(Image);
 
 const Article = ({ img, title, link, date }) => {
   return (
-    <motion.li
-      initial={{ y: 200 }}
-      whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-      className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4'
+    <motion.article
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light sm:flex-col"
     >
-      <MovingImg title={title} img={img} link={link} />
-      <span className='text-primary font-semibold pl-4'>{date}</span>
-    </motion.li>
+      <MovingImg title={title} img={img} link={`/blog/${link}`} />
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">
+        {date}
+      </span>
+    </motion.article>
   );
 };
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
-      <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'></div>
-      <Link href={link} target={link.startsWith('http') ? '_blank' : undefined} className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'>
-        <FramerImage
+    <article className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
+      <div className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light -z-10" />
+      <Link href={`/blog/${link}`} target={link.startsWith('http') ? '_blank' : undefined}>
+        <Image
           src={img}
           alt={title}
-          className='w-full h-auto'
-          width={800}
-          height={400}
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
+          className="w-full h-auto rounded-lg"
+          width={1200}
+          height={600}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </Link>
-      <Link href={link} target={link.startsWith('http') ? '_blank' : undefined}>
-        <h2 className='capitalize text-2xl font-bold my-2 hover:underline'>{title}</h2>
+      <Link href={`/blog/${link}`} target={link.startsWith('http') ? '_blank' : undefined}>
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
+          {title}
+        </h2>
       </Link>
-      <p className='text-sm mb-2'>{summary}</p>
-      <span className='text-primary'>{time}</span>
-    </li>
+      <p className="text-sm mb-2">{summary}</p>
+      <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
+    </article>
   );
 };
 
