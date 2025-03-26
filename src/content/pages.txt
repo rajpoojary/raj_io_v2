@@ -1,0 +1,69 @@
+EXPERIENCE:
+Manager, Software Engineering
+• Technical leader with 10+ years of professional experience delivering enterprise software across various industries including Media, Security and gaming
+• 5+ Years of experience as hiring manager; skilled at selecting qualified technical staff; retaining top talent; mentoring employees; establishing standards; and delivering excellence
+• Concurrently led several teams through the software development life cycle; articulating agile stories; overseeing backlogs; creating and deploying products; validating quality; and monitoring results
+• Technical Management - Managed geographically diverse technical teams through the creation of new and existing IT systems. Meeting expectations, budgets, personal goals, and delighting customers
+• Craftsmanship - Managed the development of enterprise software using high-quality architectural design patterns, unit tests, code reviews, software standards, continuous delivery techniques
+• Team Player - Consistently collaborating with Customers, QA, product, and project management to ensure completion of high-quality engineering deliverables
+• Technical Leader - Able to balance deep technical expertise and business foundations, while visualizing and evangelizing the future potentials of technologies, processes, business opportunities, and new products
+• Authorized to work in United States for any employer
+
+
+Recent Work Experience:
+Sony, PlayStation (January 2019 – Present)
+Senior Engineering Manager
+• Brought knowledge and passion for web and mobile testing to the Client engineering team
+• Improved overall quality, speed of delivery and alignment across sites (Tokyo and India)
+• Increased team's productivity by evaluating existing software development processes and implementing new technologies
+• Collaborated with Staff Engineers and Product owners to set strategic direction and develop roadmaps
+
+
+TiVo Corporation, Cloud Services (January 2018 – Present)
+Senior Engineering Manager QE
+• Managing feature, test tool development, scalability, and performance engineering teams
+• Managing multiple teams in different geographical areas
+• Lead and guide automation QA Team to focus on maximizing ROI on automation for mobile client
+• Building automation lab and toolset to support testing on mobile devices
+• Responsible for build promotion model supporting micro-service architecture
+• Work with multiple scrum/feature teams to plan, prioritize and release with quality first approach
+• Mentoring and building managers and key technical people in the team
+
+
+Lookout (September 2015 – December 2018)
+Engineering Manager
+• Led Enterprise Engineering for Lookout's flagship product line – Mobile Enterprise Security
+• Built massively scalable platform enabling ingestion of security events and dynamic analysis
+• Delivered new SaaS Analytics platform using Cassandra, Redis, AngularJs, HTML5, postgres, OpenStack, REST, Swagger
+
+
+Ericsson (September 2013 – August 2015)
+Engineering Manager
+• Led high performing team building global cloud based Live TV platform
+• Managed development team of 10+ engineers and interns (on-site and remote)
+• Implemented software development processes including test driven development and Agile
+
+
+Microsoft Corporation (April 2007 – September 2013)
+SDET II
+• Worked with IPTV scalability & analytics team to develop test framework & tools
+• Designed and developed test plans for performance testing
+• Maintained and upgraded custom testing tools for stress testing
+• Implemented SQL Server DMV analysis scripts and backup strategies
+• Developed log parsing tools for report generation
+
+
+Previous Experience:
+• Cap Gemini Consulting India Pvt. Ltd. (May 2005 – Feb 2007) - Senior Developer/Lead
+• AG Technologies Pvt. Ltd. (October 2004 – May 2005) - Senior Software Engineer
+• Shristi Software Solutions (April 2003 - October 2004) - Senior Programmer
+• iTotel Software Solutions (September 2000 - Jan 2003) - Application Developer
+
+
+EDUCATION:
+• M.S Information Technology, Boston University (2012)
+• B.B.A (Bachelors in Business Administration), Tamil Nadu (2003)
+
+
+Technical Skills:
+C#, SQL, Docker, Azure, TFS, Selenium, Appium, Kafka, Storm, JMeter, AWS 
