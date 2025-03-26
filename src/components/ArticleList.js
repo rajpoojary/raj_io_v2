@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue } from 'framer-motion';
 
 const MovingImg = ({ title, img, link }) => {
   const x = useMotionValue(0);
