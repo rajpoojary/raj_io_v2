@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
+    "gray-matter": "^4.0.3",
     "next": "13.5.1",
+    "next-mdx-remote": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
