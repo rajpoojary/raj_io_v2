@@ -46,7 +46,7 @@ const Articles = ({ articles }) => {
         <title>Articles</title>
         <meta name='description' content='Blog posts and articles'></meta>
       </Head>
-      <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+      <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:bg-dark'>
         <Layout className='pt-16'>
           <AnimatedText text='Words can Change The World!' className='mb-16'></AnimatedText>
           <ArticleList articles={articles} />

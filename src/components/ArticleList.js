@@ -22,7 +22,7 @@ const MovingImg = ({ title, img, link }) => {
 
   return (
     <Link href={link} target={link.startsWith('http') ? '_blank' : undefined} onMouseMove={handleMouse} onMouseLeave={handleMouseLeave}>
-      <h2 className='capitalize text-xl font-semibold hover:underline'>
+      <h2 className='capitalize text-xl font-semibold hover:underline dark:text-light'>
         {title}
       </h2>
       <FramerImage
@@ -74,11 +74,11 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={`/blog/${link}`} target={link.startsWith('http') ? '_blank' : undefined}>
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg dark:text-light">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
+      <p className="text-sm mb-2 dark:text-gray-300">{summary}</p>
       <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
     </article>
   );
@@ -102,7 +102,7 @@ const ArticleList = ({ articles }) => {
           />
         ))}
       </ul>
-      <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+      <h2 className='font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light'>All Articles</h2>
       <ul>
         {otherPosts.map((post) => (
           <Article

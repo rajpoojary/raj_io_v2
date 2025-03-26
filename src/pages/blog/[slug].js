@@ -13,7 +13,7 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
     return (
       <Layout>
         <div className="flex items-center justify-center min-h-screen">
-          <h1 className="text-2xl">Blog post not found</h1>
+          <h1 className="text-2xl dark:text-light">Blog post not found</h1>
         </div>
       </Layout>
     );
@@ -25,7 +25,7 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
         <title>{frontMatter.title}</title>
         <meta name="description" content={frontMatter.summary} />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:bg-dark">
         <Layout className="pt-16">
           <article className="w-full prose prose-lg dark:prose-invert max-w-4xl mx-auto">
             <div className="mb-8">
@@ -38,13 +38,13 @@ const BlogPost = ({ frontMatter, mdxSource }) => {
                 priority
               />
             </div>
-            <h1>{frontMatter.title}</h1>
+            <h1 className="dark:text-light">{frontMatter.title}</h1>
             <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
               <span>{frontMatter.date}</span>
               <span>•</span>
               <span>{frontMatter.author}</span>
             </div>
-            <div className="mt-8 prose-headings:text-dark prose-headings:dark:text-light prose-p:text-dark prose-p:dark:text-light">
+            <div className="mt-8 prose-headings:text-dark prose-headings:dark:text-light prose-p:text-dark prose-p:dark:text-light prose-strong:text-dark prose-strong:dark:text-light prose-a:text-primary prose-a:dark:text-primaryDark prose-code:text-dark prose-code:dark:text-light prose-pre:bg-gray-100 prose-pre:dark:bg-gray-800 prose-pre:text-dark prose-pre:dark:text-light">
               <MDXRemote {...mdxSource} />
             </div>
           </article>
