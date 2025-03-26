@@ -24,53 +24,49 @@ every project I work on. I look forward to the opportunity to bring my skills an
 
 EXPERIENCE: 
 
-Software Engineer @Google
-2022-Present | Mountain View, CA
-Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization.
+Senior Engineering Manager @Sony, PlayStation
+2019-Present | San Francisco, CA
+Brought knowledge and passion for web and mobile testing to the Client engineering team. Improved overall quality, speed of delivery and alignment across sites (Tokyo and India). Increased team's productivity by evaluating existing software development processes and implementing new technologies. Collaborated with Staff Engineers and Product owners to set strategic direction and develop roadmaps.
 
-Intern @Facebook
-Summer 2021 | Menlo Park, CA.
-Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-share short-form video content, including designing and implementing a new user interface and developing 
-the backend infrastructure to support the feature.
+Senior Engineering Manager QE @TiVo Corporation
+2018-Present | San Jose, CA
+Managing feature, test tool development, scalability, and performance engineering teams. Managing multiple teams in different geographical areas. Lead and guide automation QA Team to focus on maximizing ROI on automation for mobile client. Building automation lab and toolset to support testing on mobile devices. Responsible for build promotion model supporting micro-service architecture.
 
-Software Developer @Amazon
-2020-2021 | Seattle, WA.
-Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
-as product recommendations and user reviews, and optimizing the app's performance and reliability.
+Engineering Manager @Lookout
+2015-2018 | San Francisco, CA
+Led Enterprise Engineering for Lookout's flagship product line – Mobile Enterprise Security. Built massively scalable platform enabling ingestion of security events and dynamic analysis. Delivered new SaaS Analytics platform using Cassandra, Redis, AngularJs, HTML5, postgres, OpenStack, REST, Swagger.
 
-Software Developer Intern @Microsoft
-Summer 2019 | Redmond, WA.
-Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
-including implementing a new user interface for a system settings panel and optimizing the performance of 
-a core system component.
+Engineering Manager @Ericsson
+2013-2015 | San Francisco, CA
+Led high performing team building global cloud based Live TV platform. Managed development team of 10+ engineers and interns (on-site and remote). Implemented software development processes including test driven development and Agile.
 
-Teaching Assistant @MIT
-Fall 2018 | Massachusetts Ave, Cambridge, MA.
-Assisted in teaching a course on computer programming, held office hours to help students with assignments, 
-and graded exams and assignments.
+SDET II @Microsoft Corporation
+2007-2013 | Mountain View, CA
+Worked with IPTV scalability & analytics team to develop test framework & tools. Designed and developed test plans for performance testing. Maintained and upgraded custom testing tools for stress testing. Implemented SQL Server DMV analysis scripts and backup strategies. Developed log parsing tools for report generation.
 
+Previous Experience:
+Senior Developer/Lead @Cap Gemini Consulting India Pvt. Ltd.
+2005-2007 | Bangalore, India
+
+Senior Software Engineer @AG Technologies Pvt. Ltd.
+2004-2005 | Bangalore, India
+
+Senior Programmer @Shristi Software Solutions
+2003-2004 | Bangalore, India
+
+Application Developer @iTotel Software Solutions
+2000-2003 | Bangalore, India
 
 --------------------------------------------------------------
 
 EDUCATION:
 
-Bachelor Of Science In Computer Science
-2016-2020 | Massachusetts Institute Of Technology (MIT)
-Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence.
+Master Of Science In Information Technology
+2012 | Boston University
+Completed advanced coursework in software engineering, system design, and enterprise architecture.
 
-Master Of Computer Science
-2020-2022 | Stanford University
-Completed a master's project on deep learning, developing a new neural network architecture for natural 
-language understanding.
-
-Online Coursework
-2016-2020 | Coursera And EdX
-Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
-Learning Engineering.
+Technical Skills:
+C#, SQL, Docker, Azure, TFS, Selenium, Appium, Kafka, Storm, JMeter, AWS
 
 --------------------------------------------------------------
 
