@@ -28,9 +28,9 @@ Senior Engineering Manager @Sony, PlayStation
 2019-Present | San Francisco, CA
 Brought knowledge and passion for web and mobile testing to the Client engineering team. Improved overall quality, speed of delivery and alignment across sites (Tokyo and India). Increased team's productivity by evaluating existing software development processes and implementing new technologies. Collaborated with Staff Engineers and Product owners to set strategic direction and develop roadmaps.
 
-Senior Engineering Manager QE @TiVo Corporation
+Senior Engineering Manager  @TiVo Corporation
 2018-Present | San Jose, CA
-Managing feature, test tool development, scalability, and performance engineering teams. Managing multiple teams in different geographical areas. Lead and guide automation QA Team to focus on maximizing ROI on automation for mobile client. Building automation lab and toolset to support testing on mobile devices. Responsible for build promotion model supporting micro-service architecture.
+Managing feature, tools development, scalability, and performance engineering teams. Managing multiple teams in different geographical areas. Lead and guide automation QA Team to focus on maximizing ROI on automation for mobile client. Building automation lab and toolset to support testing on mobile devices. Responsible for build promotion model supporting micro-service architecture.
 
 Engineering Manager @Lookout
 2015-2018 | San Francisco, CA
