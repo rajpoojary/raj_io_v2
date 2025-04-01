@@ -1,9 +1,9 @@
 ---
-title: 'Cursor Implementation Guide: Avoiding AI Pitfalls'
-date: '2024-03-21'
-summary: 'A comprehensive guide to setting up Cursor to avoid common AI pitfalls identified in Martin Fowler\'s "Exploring Generative AI" series.'
-image: '/images/articles/Article4.jpeg'
-author: 'Raj'
+title: "Cursor Implementation Guide: Avoiding AI Pitfalls"
+date: "2024-03-21"
+summary: "A comprehensive guide to setting up Cursor to avoid common AI pitfalls identified in Martin Fowler's 'Exploring Generative AI' series."
+image: "/images/articles/Article5.jpeg"
+author: "Raj"
 ---
 
 # Cursor Implementation Guide: Avoiding AI Pitfalls
