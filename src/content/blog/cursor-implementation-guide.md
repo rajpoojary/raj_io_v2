@@ -26,10 +26,11 @@ Based on the observations in Martin Fowler's article, these are the key pitfalls
 
 1. If you haven't already, install Cursor from [cursor.sh](https://cursor.sh)
 2. Create a custom configuration file for your project:
-   ```bash
-   mkdir -p .cursor
-   touch .cursor/settings.json
-   ```
+
+```bash
+mkdir -p .cursor
+touch .cursor/settings.json
+```
 
 3. Copy the configuration from the `cursor-ai-rules.js` file into your project
 
@@ -72,14 +73,16 @@ For each project, create a `.cursorrc` file in your project root with the follow
 ### Workflow Guidelines
 
 1. **Start Small**: When implementing new features, ask Cursor to focus on one component at a time
-   ```
-   /Implement Incrementally: Create just the user authentication component with a working login form
-   ```
+
+```text
+/Implement Incrementally: Create just the user authentication component with a working login form
+```
 
 2. **Debug Properly**: When fixing issues, ask for diagnosis before solutions
-   ```
-   /Diagnose Root Cause: The application crashes when submitting the form with empty fields
-   ```
+
+```text
+/Diagnose Root Cause: The application crashes when submitting the form with empty fields
+```
 
 3. **Review Generated Code**: Always review AI-generated code with these questions in mind:
    - Is this implementing too much at once?
